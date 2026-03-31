@@ -1,0 +1,6 @@
+services:
+  kokoro-tts:
+    image: ghcr.io/remsky/kokoro-fastapi-cpu:latest # swap to kokoro-fastapi-gpu:latest if you have an NVIDIA GPU
+    ports:
+      - "8880:8880"
+    restart: unless-stopped
